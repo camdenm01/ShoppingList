@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <Button
+        android:id="@+id/button_cheese"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cheese"
+        android:textSize="25sp"
+        android:onClick="addCheese"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_rice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/rice"
+        android:textSize="25sp"
+        android:onClick="addRice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_cheese" />
+
+    <Button
+        android:id="@+id/button_apples"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/apples"
+        android:textSize="25sp"
+        android:onClick="addApples"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_rice" />
+
+    <Button
+        android:id="@+id/button_milk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/milk"
+        android:textSize="25sp"
+        android:onClick="addMilk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_apples" />
+
+    <Button
+        android:id="@+id/button_bread"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bread"
+        android:textSize="25sp"
+        android:onClick="addBread"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_milk" />
+</androidx.constraintlayout.widget.ConstraintLayout>
